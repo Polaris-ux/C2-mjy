@@ -6,7 +6,7 @@
 public class Task1 {
     public static void main(String[] args) {
         Task1 task = new Task1();
-        String[] str = new String[]{"dog", "racecar", "car"};
+        String[] str = new String[]{"cag", "cacecar", "car"};
         System.out.println(task.findMaxPrefix(str));
 
     }
