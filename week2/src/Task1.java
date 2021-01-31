@@ -11,6 +11,7 @@ public class Task1 {
 
     }
 
+    //遍历整个字符串数组，找最大前缀
     public String findMaxPrefix(String[] str) {
         if (str == null || str.length == 0) {
             return "";
