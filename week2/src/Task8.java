@@ -7,14 +7,14 @@ public class Task8 {
     public static void main(String[] args) {
         Star star = new Star();
         //多态体现
-        Star sun = new Sun();
         Universe universe = new Sun();
 
         //向下转型
-        Sun sun1 = (Sun) sun;
+        Sun sun2 = (Sun) universe;
+
         star.shine();
         universe.doAnything();
-        sun1.shine();
+        sun2.shine();
 
     }
 }
