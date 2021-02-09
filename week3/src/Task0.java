@@ -8,7 +8,7 @@ import java.util.*;
  */
 public class Task0 {
     public static void main(String[] args) {
-        //去leetcode冲了一下三数之和，超时了（太菜了
+        //去leetcode冲了一下，超时了，呜呜呜
         Task0 task=new Task0();
         int[] nums=new int[]{-1,0,1,2,-1,-4};
         int target=0;
