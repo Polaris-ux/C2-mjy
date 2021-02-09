@@ -14,6 +14,7 @@ public class Task3 {
         char[] arr=str.toCharArray();
         for (int i = 0; i < arr.length; i++) {
             if(map.containsKey(arr[i])){
+                //更新关键字的数量
                 map.put(arr[i],map.get(arr[i])+1);
             }else{
                 map.put(arr[i],1);
