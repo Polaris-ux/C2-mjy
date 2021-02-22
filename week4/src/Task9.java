@@ -28,7 +28,7 @@ class MyThread implements Runnable{
 
     @Override
     public void run() {
-        while (count<11) {
+        while (count < 11) {
             synchronized (lock) {
                 System.out.println(Thread.currentThread().getName() + "打印：" + count);
                 count++;
