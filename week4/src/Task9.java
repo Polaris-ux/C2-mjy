@@ -34,7 +34,7 @@ class MyThread implements Runnable{
                 count++;
                 //唤醒被wait的线程
                 lock.notifyAll();
-                if (count < 2) {
+                if (count < 11) {
                     try {
                         lock.wait();
                     } catch (InterruptedException e) {
