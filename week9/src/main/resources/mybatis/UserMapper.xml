@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.mjy.dao.UserMapper">
+
+    <resultMap id="userMap" type="com.mjy.pojo.User">
+        <result column="username" property="userName"/>
+        <result column="createtime" property="createTime"/>
+        <result column="updatetime" property="updateTime"/>
+    </resultMap>
+
+    <insert id="register" parameterType="com.mjy.pojo.User">
+        insert into mybatis.user_csa(username,mobile,password,name,birthday,sex,email,createtime,updatetime)
+        values (#{userName},#{mobile},#{password},#{name},#{birthday},#{sex},#{email},#{createTime},#{updateTime});
+    </insert>
+
+    <select id="login" resultMap="userMap">
+        select * from mybatis.user_csa where mobile=#{mobile} and password=#{password}
+    </select>
+
+    <select id="findUserById" parameterType="int" resultMap="userMap">
+        select * from mybatis.user_csa where id=#{id}
+    </select>
+
+    <select id="findUserByPhone" parameterType="String" resultMap="userMap">
+        select * from mybatis.user_csa where mobile=#{mobile}
+    </select>
+
+</mapper>
