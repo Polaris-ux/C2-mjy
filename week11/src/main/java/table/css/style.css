@@ -1,0 +1,24 @@
+table{
+    width:700px;
+    height:800px;
+    border:2px solid black;
+    border-collapse:collapse;
+    /*border-spacing:1px;*/
+    text-align: center;
+    margin: 0 auto;
+
+}
+td,tr{
+    /*!*border-collapse：collapse边框合并,双边框变为单边框*!
+    <caption>个人简历</caption>:表中可用的标题
+    */
+    /*border-collapse: collapse;*/
+    border: 2px solid black;
+    width:30px;
+    height:40px;
+}
+
+caption{
+    font-size:30px;
+    font-weight:bold;
+}
